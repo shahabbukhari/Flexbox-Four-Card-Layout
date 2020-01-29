@@ -1,0 +1,108 @@
+:root {
+     /* Colors */
+
+     /* Primary */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+        /* Neutral */
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--light-gray);
+    width: 100%;
+    height: 100%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    
+}
+.header-heading {
+    font-family: 'Poppins', sans-serif;
+    color: var(--grayish-blue);
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.bold {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+.header-paragraph {
+    font-family: 'Poppins', sans-serif;
+    color: var(--grayish-blue);
+    text-align: center;
+    font-size: 1.5rem;
+    /* perpose of givig the width is to break pragraph in two lines */
+    width: 34%;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: var(--light-gray);  
+    padding: 3rem;
+    /* border: 2px solid black; */
+    border-radius: 8px;
+    width: 33rem;
+    height: 25rem;
+    margin: 1.2rem;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 20px hsl(229, 6%, 80%);
+}
+.red{
+   border-top: 4px solid var(--red); 
+}
+.cyan{
+    border-top: 4px solid var(--cyan);     
+}
+.blue{
+    border-top: 4px solid var(--blue); 
+}
+.orange{
+    border-top: 4px solid var(--orange); 
+}
+footer{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.card-heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;    
+    color:  var(--dark-blue);
+    margin-bottom: 1.2rem;
+}
+.card-para {
+    font-size: 1.4rem;
+    color: var(--grayish-blue);
+    /* By adding this all card paragraphs are split in two lines it helps to set accurate position for image */
+    width: 90%;
+}
+.card-imd {
+    position: relative;
+    top: 5rem;
+    left:  18rem;
+}
